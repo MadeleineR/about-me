@@ -3,11 +3,12 @@
 import MainHead from '../components/MainHead.astro';
 import Nav from '../components/Nav.astro';
 import Footer from '../components/Footer.astro';
-import IntroductionSec from '../components/IntroductionSec.astro';
-import SkillsSec from '../components/SkillsSec.astro';
-import CareerSec from '../components/CareerSec.astro';
-import EducationSec from '../components/EducationSec.astro';
-import PersonalInterestsSec from '../components/PersonalInterestsSec.astro';
+import Introduction from '../components/sections/Introduction.astro';
+import Skills from '../components/sections/Skills.astro';
+import Career from '../components/sections/Career.astro';
+import Education from '../components/sections/Education.astro';
+import PersonalInterests from '../components/sections/PersonalInterests.astro';
+import Contact from '../components/sections/Contact.astro';
 
 // Full Astro Component Syntax:
 // https://docs.astro.build/core-concepts/astro-components/
@@ -178,19 +179,16 @@ import PersonalInterestsSec from '../components/PersonalInterestsSec.astro';
 				<h1 class="title">
 					<small class="subtitle">The personal site of</small>Madeleine Redl
 				</h1>
-				<div class="roles">
-					<span class="role">👩‍💻 Web Developer <span class="invert">👩‍💻 Web Developer</span></span>
-				</div>
-				<p class="desc"></p>
 			</div>
 		</header>
 		<main class="wrapper">
 			<div class="grid">
-				<IntroductionSec />
-				<SkillsSec />
-				<CareerSec />
-				<EducationSec />
-				<PersonalInterestsSec />
+				<Introduction />
+				<Skills />
+				<Career />
+				<Education />
+				<PersonalInterests />
+				<Contact />
 			</div>
 		</main>
 		<Footer />
